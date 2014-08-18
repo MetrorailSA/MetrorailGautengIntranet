@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = "_Layout.cshtml";
+    string[] pages = { "Benefits", "Interesting Links", "Vacancies", "Wellness And Lifestyle", "Food"};
+}
+
+<div class="row"><p></p></div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+        <div class="jumbotron-for-me">
+
+            <a class="navbar-brand" href="~/ForMe">
+                <h1>
+                    For Me...
+                </h1>
+            </a>
+                <br /><br /><br /><br />
+                <p class="lead">Benefits, Health, and so much more!</p>
+            <br /><br />
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                        @{
+                            foreach (var page in pages)
+                            {
+                                if (ViewBag.Title == "For Me - " + page)
+                                {
+                                    <li class="active">
+                                        @Html.ActionLink(page, page.Replace(" ", ""), "ForMe")
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        @Html.ActionLink(page, page.Replace(" ", ""), "ForMe")
+                                    </li>
+                                }
+                            }
+                        }
+
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+</div>
+    </div><!-- /.container-fluid -->
+</nav>
+        @RenderBody()
+

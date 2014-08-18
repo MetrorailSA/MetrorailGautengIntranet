@@ -1,0 +1,102 @@
+﻿
+body {
+
+}
+.jumbotron {
+    padding: 10px;
+    background-image: url('Images/RailHeaderXSml2.png');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-for-me {
+    padding: 10px;
+    background-image: url('Images/ForMe.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-about {
+    padding: 10px;
+    background-image: url('Images/About.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-news {
+    padding: 10px;
+    background-image: url('Images/News.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-rail-information {
+    padding: 10px;
+    background-image: url('Images/RailInformation.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-community {
+    padding: 10px;
+    background-image: url('Images/Community.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-gallery {
+    padding: 10px;
+    background-image: url('Images/Gallery.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-legislation {
+    padding: 10px;
+    background-image: url('Images/Legislation.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-events {
+    padding: 10px;
+    background-image: url('Images/Events.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-contact {
+    padding: 10px;
+    background-image: url('Images/Contact.jpg');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: white;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

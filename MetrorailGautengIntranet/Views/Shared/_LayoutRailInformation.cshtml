@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = "_Layout.cshtml";
+    string[] pages = { "Train Time Table", "Train Routes" };
+}
+
+<div class="row"><p></p></div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+
+            <div class="jumbotron-rail-information">
+
+                <a class="navbar-brand" href="~/RailInformation">
+                    <h1>
+                        Rail Information...
+                    </h1>
+                </a>
+                <br /><br /><br /><br />
+                <p class="lead">All about train timetables and route maps!</p>
+                <br /><br />
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                        @{
+                            foreach (var page in pages)
+                            {
+                                if (ViewBag.Title == "Rail Information - " + page)
+                                {
+                                    <li class="active">
+                                        @Html.ActionLink(page, page.Replace(" ", ""), "RailInformation")
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        @Html.ActionLink(page, page.Replace(" ", ""), "RailInformation")
+                                    </li>
+                                }
+                            }
+                        }
+
+
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </div>
+</nav>
+        @RenderBody()
+

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = "_Layout.cshtml";
+    string[] pages = { "Basic Conditions Of Employment", "Public Finance Management Act", "Employment Equity Act", "Skills Development Act", "Labour Relations Act" };
+}
+
+<div class="row"><p></p></div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+        <div class="jumbotron-legislation">
+
+            <a class="navbar-brand" href="~/Legislation">
+                <h1>
+                    Legislation...
+                </h1>
+            </a>
+            <br /><br /><br /><br />
+            <p class="lead">Learn about labour laws and skills development acts!</p>
+            <br /><br />
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    @{
+                        foreach (var page in pages)
+                        {
+                            if (ViewBag.Title == "News - " + page)
+                            {
+                                <li class="active">
+                                    @Html.ActionLink(page, page.Replace(" ", ""), "Legislation")
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    @Html.ActionLink(page, page.Replace(" ", ""), "Legislation")
+                                </li>
+                            }
+                        }
+                    }
+
+
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </div>
+</nav>
+        @RenderBody()
+

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = "_Layout.cshtml";
+    string[] pages = { "History", "Who Is Who", "Company Introduction", "Commitment", "Core Value", "Company Policies", "Procedures", "Stakeholders", "Government", "Strategy" };
+}
+
+<div class="row"><p></p></div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+        <div class="jumbotron-about">
+
+            <a class="navbar-brand" href="~/About">
+                <h1>
+                    About us...
+                </h1>
+            </a>
+            <br /><br /><br /><br />
+            <p class="lead">Meet the team, learn about our core values!</p>
+            <br /><br />
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    @{
+                        foreach (var page in pages)
+                        {
+                            if (ViewBag.Title == "About - " + page)
+                            {
+                                <li class="active">
+                                    @Html.ActionLink(page, page.Replace(" ", ""), "About")
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    @Html.ActionLink(page, page.Replace(" ", ""), "About")
+                                </li>
+                            }
+                        }
+                    }
+
+
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+        </div><!-- /.container-fluid -->
+</nav>
+        @RenderBody()
+

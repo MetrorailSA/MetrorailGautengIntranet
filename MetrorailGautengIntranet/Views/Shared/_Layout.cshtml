@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+@{
+    string[][] pages = { new string[] { "About", "About" }, new string[] { "For Me", "ForMe" }, new string[] { "Rail Information", "RailInformation" }, new string[] { "Community", "Community" }, new string[] { "Legislation", "Legislation" }, new string[] { "Contact", "Contact" } };
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Metrorail Gauteng Intranet</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Intranet home", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    @{
+                        foreach (var page in pages)
+                        {
+                            if (ViewBag.Title.StartsWith(page[0]))
+                            {
+                                <li class="active">
+                                    @Html.ActionLink(page[0], "Index", page[1])
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    @Html.ActionLink(page[0], "Index", page[1])
+                                </li>
+                            }
+                        }
+                    }
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-text">Hello, @User.Identity.Name!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div class="row">
+            <br /><br /><br />
+            <div class="col-md-2">
+                <div class="row">
+                    
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <a href="~/Events">
+                            <img src="~/Content/Images/Events2.jpg" width="115" height="115" alt="Events">
+                            <div class="caption">
+                                <h3>Events</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <a href="~/News">
+                            <img src="~/Content/Images/NewsXSmlSqr.jpg" width="115" height="115" alt="News">
+                            <div class="caption">
+                                <h3>News</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail">
+                        <img src="~/Content/Images/CameraSml.jpg" width="115" height="115" alt="Gallery">
+                        <div class="caption">
+                            <h3>Gallery</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10"> 
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navbar navbar-inverse navbar-static-bottom">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p>&copy; @DateTime.Now.Year - Metrorail</p>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "Index", "About")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-text">Hello, @User.Identity.Name!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+</body>
+</html>
