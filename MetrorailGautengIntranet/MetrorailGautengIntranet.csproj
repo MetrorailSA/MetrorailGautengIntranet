@@ -186,6 +186,8 @@
     <Content Include="Content\Images\NewsSmlSqr.jpg" />
     <Content Include="Content\Images\NewsXSml.jpg" />
     <Content Include="Content\Images\NewsXSmlSqr.jpg" />
+    <Content Include="Content\Images\News\NewsPeters.jpg" />
+    <Content Include="Content\Images\News\NewTrain.jpg" />
     <Content Include="Content\Images\RailHeaderSml2.png" />
     <Content Include="Content\Images\RailHeaderXSml.png" />
     <Content Include="Content\Images\RailHeaderXSml2.png" />
@@ -219,6 +221,11 @@
     <Content Include="Content\Images\ForMe\ChesaNyama.pdf" />
     <Content Include="Content\Images\ForMe\ChickenLicken.pdf" />
     <Content Include="Content\Images\ForMe\Wimpy.pdf" />
+    <Content Include="Content\Docs\Legislation\publicfinanceact.pdf" />
+    <Content Include="Content\Docs\Legislation\Basic Conditions of Employment.pdf" />
+    <Content Include="Content\Docs\Legislation\Labour Relations Act.pdf" />
+    <Content Include="Content\Docs\Legislation\Skills Development Act.pdf" />
+    <Content Include="Content\Docs\Legislation\Employment Equity Act.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
