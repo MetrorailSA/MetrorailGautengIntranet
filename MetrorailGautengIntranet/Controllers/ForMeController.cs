@@ -39,5 +39,25 @@ namespace MetrorailGautengIntranet.Controllers
             return View();
         }
 
+        public ActionResult WellnessSmoking()
+        {
+            return View();
+        }
+
+        public ActionResult WellnessStress()
+        {
+            return View();
+        }
+
+        public ActionResult WellnessAlcohol()
+        {
+            return View();
+        }
+
+        public ActionResult WellnessArticles()
+        {
+            return View();
+        }
+
     }
 }

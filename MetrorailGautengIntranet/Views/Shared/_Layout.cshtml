@@ -9,18 +9,23 @@
     <title>@ViewBag.Title - Metrorail Gauteng Intranet</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <link href="~/Content/animate.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
+            <div class="navbar-header"><a href="~/Home"><img src="~/Content/Images/MetrorailLogo.gif" height="50" width="50" style="margin:5px;margin-right:15px" /></a></div>
+            
             <div class="navbar-header">
+               
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Intranet home", "Index", "Home", null, new { @class = "navbar-brand" })
+                @Html.ActionLink(" Intranet home", "Index", "Home", null, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

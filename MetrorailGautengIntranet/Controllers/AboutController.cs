@@ -63,5 +63,10 @@ namespace MetrorailGautengIntranet.Controllers
             return View();
         }
 
+        public ActionResult SASymbols()
+        {
+            return View();
+        }
+
     }
 }

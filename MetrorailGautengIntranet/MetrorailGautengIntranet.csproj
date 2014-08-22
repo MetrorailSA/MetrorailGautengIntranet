@@ -130,11 +130,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animate.css" />
     <Content Include="Content\Bootstrap-Cosmo.css" />
     <Content Include="Content\Bootstrap-Flatly.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\About.jpg" />
+    <Content Include="Content\Images\About\blue-crane.jpg" />
+    <Content Include="Content\Images\About\CoatOfArms.png" />
+    <Content Include="Content\Images\About\CoatOfArmsSquare.png" />
+    <Content Include="Content\Images\About\CyrilRamaphosa.jpg" />
+    <Content Include="Content\Images\About\Dipuo-Peters.jpg" />
+    <Content Include="Content\Images\About\galjoen.png" />
+    <Content Include="Content\Images\About\protea.jpg" />
+    <Content Include="Content\Images\About\Springbok.jpg" />
+    <Content Include="Content\Images\About\yellowwood.jpg" />
     <Content Include="Content\Images\Archived.jpg" />
     <Content Include="Content\Images\Benefits2.JPG" />
     <Content Include="Content\Images\CameraSml.jpg" />
@@ -153,11 +163,24 @@
     <Content Include="Content\Images\FinanceAct.jpg" />
     <Content Include="Content\Images\Food.jpg" />
     <Content Include="Content\Images\ForMe.jpg" />
+    <Content Include="Content\Images\ForMe\Alcohol.jpg" />
+    <Content Include="Content\Images\ForMe\Anat.jpg" />
+    <Content Include="Content\Images\ForMe\ChesaNyama.jpg" />
+    <Content Include="Content\Images\ForMe\ChickenLicken.jpg" />
+    <Content Include="Content\Images\ForMe\Debonairs.jpg" />
+    <Content Include="Content\Images\ForMe\FishAndChips.jpg" />
+    <Content Include="Content\Images\ForMe\Nandos.jpg" />
+    <Content Include="Content\Images\ForMe\Smoking.jpg" />
+    <Content Include="Content\Images\ForMe\Stress.jpg" />
+    <Content Include="Content\Images\ForMe\Wandies.jpg" />
+    <Content Include="Content\Images\ForMe\Wellness.jpg" />
+    <Content Include="Content\Images\ForMe\Wimpy.png" />
     <Content Include="Content\Images\Gallery.jpg" />
     <Content Include="Content\Images\InternalNews.jpg" />
     <Content Include="Content\Images\About\Jacob-zuma.jpg" />
     <Content Include="Content\Images\LabourRelations.jpg" />
     <Content Include="Content\Images\Legislation.jpg" />
+    <Content Include="Content\Images\MetrorailLogo.gif" />
     <Content Include="Content\Images\News.jpg" />
     <Content Include="Content\Images\NewsSml.jpg" />
     <Content Include="Content\Images\NewsSmlSqr.jpg" />
@@ -188,6 +211,14 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Images\ForMe\AnatMenu.pdf" />
+    <Content Include="Content\Images\ForMe\FishAndChips.pdf" />
+    <Content Include="Content\Images\ForMe\Wandies.pdf" />
+    <Content Include="Content\Images\ForMe\Nandos.pdf" />
+    <Content Include="Content\Images\ForMe\Debonairs.pdf" />
+    <Content Include="Content\Images\ForMe\ChesaNyama.pdf" />
+    <Content Include="Content\Images\ForMe\ChickenLicken.pdf" />
+    <Content Include="Content\Images\ForMe\Wimpy.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -250,6 +281,11 @@
     <Content Include="Views\Legislation\EmploymentEquityAct.cshtml" />
     <Content Include="Views\Legislation\SkillsDevelopmentAct.cshtml" />
     <Content Include="Views\Legislation\LabourRelationsAct.cshtml" />
+    <Content Include="Views\About\SASymbols.cshtml" />
+    <Content Include="Views\ForMe\WellnessSmoking.cshtml" />
+    <Content Include="Views\ForMe\WellnessStress.cshtml" />
+    <Content Include="Views\ForMe\WellnessAlcohol.cshtml" />
+    <Content Include="Views\ForMe\WellnessArticles.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
