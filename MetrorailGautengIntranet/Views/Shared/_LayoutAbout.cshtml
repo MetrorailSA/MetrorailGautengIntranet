@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 @{
     Layout = "_Layout.cshtml";
-    string[] pages = { "History", "Who Is Who", "Company Introduction", "Commitment", "Core Value", "Company Policies", "Procedures", "Stakeholders", "Government", "Strategy" };
+    string[][] pages = { new string[] {"History", "History"}, new string[] { "Who Is Who", "WhoIsWho" }, new string[] { "Introduction", "CompanyIntroduction" }, new string[] { "Commitment", "Commitment" }, new string[] { "Core Value", "CoreValue" }, new string[] { "Policies", "CompanyPolicies" }, new string[] { "Procedures", "Procedures" }, new string[] { "Stakeholders", "Stakeholders" }, new string[] { "Government", "Government" }, new string[] { "Strategy", "Strategy" } };
 }
 
 <div class="row"><p></p></div>
@@ -21,21 +21,21 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav small-nav">
 
                     @{
                         foreach (var page in pages)
                         {
-                            if (ViewBag.Title == "About - " + page)
+                            if (ViewBag.Title == "About - " + page[0])
                             {
                                 <li class="active">
-                                    @Html.ActionLink(page, page.Replace(" ", ""), "About")
+                                    @Html.ActionLink(page[0], page[1], "About")
                                 </li>
                             }
                             else
                             {
                                 <li>
-                                    @Html.ActionLink(page, page.Replace(" ", ""), "About")
+                                    @Html.ActionLink(page[0], page[1], "About")
                                 </li>
                             }
                         }

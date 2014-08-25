@@ -149,6 +149,21 @@ mark,
     width:16px;
 }
 
+.metrorail-logo-xsml {
+    height:52px;
+    width:70px;
+}
+
+.metrorail-logo-sml {
+    height:75px;
+    width:100px;
+}
+
+.metrorail-logo-med {
+    height:100px;
+    width:150px;
+}
+
 .smalltext {
     font-size:14px;
 }
@@ -256,4 +271,8 @@ blockquote p {
 .coming-soon{
     color:lightblue;
     font-size:5em;
+}
+
+.small-nav{
+    font-size:12px;
 }
