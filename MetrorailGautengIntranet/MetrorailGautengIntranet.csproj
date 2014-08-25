@@ -160,6 +160,7 @@
     <Content Include="Content\Images\EmployeeEquity.JPG" />
     <Content Include="Content\Images\Employment.jpg" />
     <Content Include="Content\Images\Events.jpg" />
+    <Content Include="Content\Images\Events2.jpg" />
     <Content Include="Content\Images\ExternalNews.jpg" />
     <Content Include="Content\Images\FinanceAct.jpg" />
     <Content Include="Content\Images\Food.jpg" />
@@ -177,6 +178,7 @@
     <Content Include="Content\Images\ForMe\Wellness.jpg" />
     <Content Include="Content\Images\ForMe\Wimpy.png" />
     <Content Include="Content\Images\Gallery.jpg" />
+    <Content Include="Content\Images\Gallery2.jpg" />
     <Content Include="Content\Images\InternalNews.jpg" />
     <Content Include="Content\Images\About\Jacob-zuma.jpg" />
     <Content Include="Content\Images\LabourRelations.jpg" />
