@@ -18,6 +18,21 @@ namespace MetrorailGautengIntranet.Controllers
             return View();
         }
 
+        public ActionResult TrainTimeTableWeek()
+        {
+            return View();
+        }
+
+        public ActionResult TrainTimeTableSat()
+        {
+            return View();
+        }
+
+        public ActionResult TrainTimeTableSun()
+        {
+            return View();
+        }
+
         public ActionResult TrainRoutes()
         {
             return View();

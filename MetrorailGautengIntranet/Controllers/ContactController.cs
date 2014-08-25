@@ -13,5 +13,20 @@ namespace MetrorailGautengIntranet.Controllers
             return View();
         }
 
+        public ActionResult ContactGauteng()
+        {
+            return View();
+        }
+
+        public ActionResult ContactDurban()
+        {
+            return View();
+        }
+
+        public ActionResult ContactWesternCape()
+        {
+            return View();
+        }
+
     }
 }

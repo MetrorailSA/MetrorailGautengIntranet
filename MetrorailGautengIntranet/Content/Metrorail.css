@@ -57,7 +57,7 @@ body {
 
 .jumbotron-gallery {
     padding: 10px;
-    background-image: url('Images/Gallery.jpg');
+    background-image: url('Images/Gallery2.jpg');
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,6 +129,26 @@ mark,
     width:100px;
 }
 
+.square50 {
+    height:50px;
+    width:50px;
+}
+
+.square32 {
+    height:32px;
+    width:32px;
+}
+
+.square24 {
+    height:24px;
+    width:24px;
+}
+
+.square16 {
+    height:16px;
+    width:16px;
+}
+
 .smalltext {
     font-size:14px;
 }
@@ -197,7 +217,7 @@ blockquote p {
 .metrorail-item .item-content {
     background-color: #529AEB;
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     height: 240px;
     position: absolute;
     z-index: 10;
@@ -221,4 +241,19 @@ blockquote p {
     font-weight: 400;
     margin: 5px 0 15px 0;
     color: #fff;
+}
+
+.btnlnk{
+    color:blue;
+}
+
+.tt-icon{
+    height:24px;
+    width:24px;
+    margin-bottom:10px;
+}
+
+.coming-soon{
+    color:lightblue;
+    font-size:5em;
 }
