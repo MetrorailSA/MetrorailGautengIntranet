@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/_LayoutGallery.cshtml";
+}
+
+<h1>@Model.Title</h1>
+<br />
+<div class="row">
+    <div class="col-md-1"> </div>
+
+    @{var i = 1; }
+
+    @{var pictures = Model.photos;}
+
+
+    @foreach (var photo in pictures)
+    {
+        <div class="col-lg-3">
+            <div class="row">
+                <a href="@Url.Content("~/Content/Images/Gallery/Gallery2/" + photo.FileName)">
+                    <img alt="@photo.Description" src="@Url.Content("~/Content/Images/Gallery/Gallery2/" + photo.FileName)" class=" thumbnail-border" width="180" />
+                </a>
+            </div>
+            <div class="row">
+
+                <strong>@photo.Title</strong>
+            </div>
+        </div>
+
+        if (i % 3 == 0)
+        {
+            @:<div class="col-md-1"> </div>
+            @:</div>
+            @:<div class="row">
+            @:<div class="col-md-1"> </div>
+        }
+
+        i++;
+    }
+    <div class="col-md-1"> </div>
+</div>

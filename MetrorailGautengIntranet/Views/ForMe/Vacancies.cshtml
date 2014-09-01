@@ -16,3 +16,14 @@
     <div class="col-md-4 center-block"></div>
 </div>
 
+<div class="row">
+    <div class="col-md-8"><strong>Position</strong></div>
+    <div class="col-md-4"><strong>Department</strong></div>
+</div>
+    @foreach (var vacancy in Model)
+    {
+        <div class="row">
+           <div class="col-md-8"><a href="~/Content/Docs/ForMe/Vacancies/@vacancy.DocName"><strong>@vacancy.JobTitle</strong></a> </div>
+           <div class="col-md-4">@vacancy.Department</div>
+        </div>
+    }

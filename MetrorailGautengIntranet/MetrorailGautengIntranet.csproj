@@ -109,7 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Content\Images\Gallery\Gallery3\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -128,14 +128,28 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ForMe\Vacancy.cs" />
+    <Compile Include="Models\Gallery\Gallery.cs" />
+    <Compile Include="Models\Gallery\Photo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\animate.css" />
     <Content Include="Content\Bootstrap-Cosmo.css" />
     <Content Include="Content\Bootstrap-Flatly.css" />
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Docs\ForMe\Vacancies\Advert - Chief Engineering Technician Civil - Projects.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\Advert - Project Manager Signalling.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\Advert - Senior Engineer Telecommunications.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\Creditors Administrator.docx" />
+    <Content Include="Content\Docs\ForMe\Vacancies\GAUTENG_TECHNICAL_SUPERVISOR_TRACK_WELDING___PERWAY.DOCX" />
+    <Content Include="Content\Docs\ForMe\Vacancies\internal application form doc %281%29.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\internal application form doc.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\readme.txt" />
+    <Content Include="Content\Docs\ForMe\Vacancies\Senior Trade Hand - Rolling Stock - Copy.doc" />
     <Content Include="Content\Images\About.jpg" />
     <Content Include="Content\Images\About\blue-crane.jpg" />
     <Content Include="Content\Images\About\CoatOfArms.png" />
@@ -179,6 +193,15 @@
     <Content Include="Content\Images\ForMe\Wimpy.png" />
     <Content Include="Content\Images\Gallery.jpg" />
     <Content Include="Content\Images\Gallery2.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery1\Fun.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery1\Makeup.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery1\Wellness.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery1\WellnessDay.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery2\Start.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery2\Tired.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery2\Winners.jpg" />
+    <Content Include="Content\Images\Gallery\Gallery2\WomensDayRace.jpg" />
+    <Content Include="Content\Images\Gallery\readme.txt" />
     <Content Include="Content\Images\InternalNews.jpg" />
     <Content Include="Content\Images\About\Jacob-zuma.jpg" />
     <Content Include="Content\Images\LabourRelations.jpg" />
@@ -297,6 +320,22 @@
     <Content Include="Content\Docs\RailInformation\WEEK\SPRINGS-NIGEL-WEEK.xls" />
     <Content Include="Content\Docs\RailInformation\WEEK\VEREENIGING-JOHANNESBURG-GEORGE GOCH WEEK.xls" />
     <Content Include="Content\Docs\RailInformation\WEEK\VEREENIGING-KLIPRIVIER-GERMISTON-WEEK.xls" />
+    <Content Include="Content\Docs\ForMe\Vacancies\vacancies.csv" />
+    <Content Include="Content\Docs\ForMe\Vacancies\106707-v1-ADVERT_STATION_SUPERVISORAug.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\20032-v1-PAYROLL_OFFICER_WITH_SUPERVISION 3.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\26758-v1-BUSINESS_EXPRESS_TRAIN_MANAGER__SBE___CUSTOMER_S....doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\26759-v1-BUSINESS_EXPRESS_TRAIN_MANAGER_TBE___CUSTOMER_SE....doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34690-v1-ADVERT_SENIOR_OFFICE_ADMINISTRATIVE_ASSISTANT_ACCO....docx" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34775-v1-SENIOR_TECHNICAL_TRAINING_OFFICER_COT___ROLLING_....doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34776-v1-REGIONAL_ENGINEER_109_PERWAY_2014.doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34777-v1-METROGUARD_IN_TRAINING___TRAIN_OPERATIONS.DOC" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34778-v1-TECHNICAL_SUPERVISOR_MULTIPLE_TRADES___ROLLING_STO....docx" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34779-v1-MAINTENANCE_PLANNER___ROLLING_STOCK_GAUTENG_NORTH.....docx" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34780-v1-TECHNICAL_SUPERVISOR_QUALITY_MANAGEMENT___ROLLING_....docx" />
+    <Content Include="Content\Docs\ForMe\Vacancies\34781-v1-SYSTEMS_ENGINEER_ELECTRICAL_MECHANICAL_ROLLING_S....doc" />
+    <Content Include="Content\Docs\ForMe\Vacancies\66716-v1-ASSISTANT_MANAGER___PROTECTION_SERVICES.DOC" />
+    <Content Include="Content\Images\Gallery\Gallery1\Gallery.csv" />
+    <Content Include="Content\Images\Gallery\Gallery2\Gallery.csv" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -373,6 +412,9 @@
     <Content Include="Views\Contact\ContactWesternCape.cshtml" />
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutGallery.cshtml" />
+    <Content Include="Views\Gallery\Gallery1.cshtml" />
+    <Content Include="Views\Gallery\Gallery2.cshtml" />
+    <Content Include="Views\Gallery\Gallery3.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
